@@ -78,7 +78,7 @@ const AnimatedLine = () => {
           <span>Soladdin</span>
         </div>
         <div
-          className={`${classes.text_container} ${classes["text_container--second"]} ${classes["text_container--second-mirrored"]}`}
+          className={`${classes.text_container} ${classes["text_container--second-mirrored"]}`}
         >
           <span>Soladdin</span>
           <span>Soladdin</span>

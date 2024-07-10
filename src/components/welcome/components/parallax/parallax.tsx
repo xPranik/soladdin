@@ -14,7 +14,7 @@ const Parallax: React.FC<OwnProps> = () => {
   }, []);
 
   return (
-    <>
+    <div className={classes.parallax_wrapper}>
       <div
         className={classes.layout_1}
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
@@ -59,7 +59,7 @@ const Parallax: React.FC<OwnProps> = () => {
         className={classes.layout_11}
         style={{ transform: `translateY(${offsetY * 0.14}px)` }}
       />
-    </>
+    </div>
   );
 };
 

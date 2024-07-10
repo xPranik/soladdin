@@ -105,7 +105,7 @@
         background-image: url('/assets/noise.png');
         background-size: contain;
         background-repeat: repeat;
-        opacity: 0.05;
+        opacity: 0.07;
     }
     
     &::after {
@@ -118,7 +118,7 @@
         width: 100%;
         border-radius: 200px;
         background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
     }
 
     @media (max-width: 1200px) {
@@ -134,7 +134,7 @@
         border-radius: 0;
 
         &::before {
-            opacity: 0.05;
+            opacity: 0.07;
             border-radius: 0;
         }
 
@@ -180,6 +180,7 @@
 
     &__img {
         height: 84px;
+        margin-bottom: -8px;
 
         img {
             height: 100%;
@@ -197,9 +198,11 @@
     @media (max-width: 1200px) {
         &__img {
             height: 65px;
+            margin-bottom: -5px;
         }
         &__text {
             font-size: 20px;
+            margin-bottom: 0;
         }
     }
     @media (max-width: 764px) {

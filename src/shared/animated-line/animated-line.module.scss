@@ -57,6 +57,9 @@
             transform: rotate(7deg);
         }
     }
+    @media (max-width: 764px) {
+        height: 15vw;
+    }
 }
 
 .text_container {
@@ -69,9 +72,9 @@
     font-family: 'KingOfThieves';
     font-size: 18px;
     word-spacing: nowrap;
-    animation: animate 30s linear infinite;
+    animation: animate_mirrored 180s linear infinite;
     gap: 140px;
-    animation-delay: -30s;
+    animation-delay: -180s;
 
     & > span {
         position: relative;
@@ -88,9 +91,35 @@
     }
 
     &--second {
-        animation: animate-two 30s linear infinite;
-        animation-delay: -15s;
+        animation: animate-two_mirrored 180s linear infinite;
+        animation-delay: -90s;
         color: #fff;
+    
+    }
+
+    
+    &--second-mirrored {
+        animation: animate-two 180s linear infinite;
+        animation-delay: -90s;
+        color: #fff;
+    }
+    &--mirrored {
+        animation: animate 180s linear infinite;
+    }
+    
+
+    
+
+    @media (max-width: 764px) {
+        font-size: 4vw;
+
+        & > span {
+            &:nth-child(4n)::before {
+                font-size: 8vw;
+                left: -4vw;
+                top: -1.5vw;
+            }
+        }
     }
 }
 
@@ -109,5 +138,23 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes animate_mirrored {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate-two_mirrored {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
     }
 }

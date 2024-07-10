@@ -13,6 +13,10 @@
     @media (max-width: 1200px) {
         height: 100vw;
     }
+
+    @media (max-width: 764px) {
+        height: 130vw;
+    }
 }
 
 .container {
@@ -44,6 +48,10 @@
     
     @media (max-width: 1200px) {
         top: 98vw;
+    }
+
+    @media (max-width: 764px) {
+        top: 130vw;
     }
 }
 
@@ -85,11 +93,21 @@
     margin-top: 95px;
 
     & button {
-        min-width: 216px;
-        width: 100%;
+        width: 216px;
     }
 
     @media (max-width: 1200px) {
         margin-top: 30vw;
+    }
+    @media (max-width: 764px) {
+        flex-direction: column;
+        gap: 0;
+        &__button {
+            width: 100%;
+            margin-top: 5vw;
+        }
+        & button {
+            width: 100%;
+        }
     }
 }

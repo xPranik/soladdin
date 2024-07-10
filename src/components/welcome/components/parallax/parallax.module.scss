@@ -1,4 +1,11 @@
 
+.parallax_wrapper {
+    
+    @media (max-width: 764px) {
+        display: none;
+    }
+}
+
 .layout_1 {
     position: absolute;
     top: 656px;
