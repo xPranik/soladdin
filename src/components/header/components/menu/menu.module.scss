@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.link {
+    font-size: 18px;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

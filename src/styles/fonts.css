@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Kingofthieves';
+    src: url('./king-of-thieves/Kingofthieves.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AIBrayan';
+    src: url('./ai-bayan/AlBayan.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ThunderousOne';
+    src: url('./thunderous-one/ThunderousOne.ttf');
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,24 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    width: 216px;
+    padding: 17px 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'KingOfThieves';
+    cursor: pointer;
+    
+    &--transparent {
+        box-shadow: none;
+        background: transparent;
+        color: #fff;
+        border-color: #fff;
+    }
+}

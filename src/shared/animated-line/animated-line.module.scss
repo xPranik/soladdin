@@ -1,0 +1,106 @@
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 84px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.strip {
+    position: absolute;
+    display: flex;
+    width: calc(100% + 100px);
+    color: #fff;
+    height: 86px;
+    transform: rotate(-4.5deg);
+    z-index: 2;
+    &::before {   
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('/assets/noise.png');
+        background-size: contain;
+        background-repeat: repeat;
+        opacity: 0.05;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(62, 93, 148, 0.6);
+        backdrop-filter: blur(15px);
+        border: 2px solid #fff;
+        border-left: none;
+        border-right: none;
+    }
+
+    &--mirrored {
+        transform: rotate(4.5deg);
+        z-index: 1;
+        &::after {
+            background-color: rgba(90, 62, 148, 0.5);
+        }
+    }
+}
+
+.text_container {
+    position: relative;
+    z-index: 3;
+    padding: 0 140px 0 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'KingOfThieves';
+    font-size: 18px;
+    word-spacing: nowrap;
+    animation: animate 30s linear infinite;
+    gap: 140px;
+    animation-delay: -30s;
+
+    & > span {
+        position: relative;
+        
+        &:nth-child(4n)::before {
+            content: '$';
+            font-size: 39px;
+            font-family: 'ThunderousOne';
+            font-weight: 400;
+            position: absolute;
+            left: -18px;
+            top: -10px;
+        }
+    }
+
+    &--second {
+        animation: animate-two 30s linear infinite;
+        animation-delay: -15s;
+        color: #fff;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate-two {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
