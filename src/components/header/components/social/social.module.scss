@@ -6,6 +6,21 @@
     right: 45px;
     top: 50%;
     transform: translateY(-50%);
+
+    
+    @media (max-width: 1200px) {
+        right: 15px;
+    }
+    
+    @media (max-width: 764px) {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2vw;
+        gap: 15px;
+    }
 }
 
 .social {
@@ -37,5 +52,23 @@
             background-color: #15181a;
         }
     }
-    
+
+    @media (max-width: 1200px) {
+        width: 30px;
+        height: 30px;
+
+        &__icon {
+            width: 18px;
+        }
+    }
+
+    @media (max-width: 764px) {
+        width: 60px;
+        height: 60px;
+
+        &__icon {
+            width: 45px;
+            height: 45px;
+        }
+    }
 }

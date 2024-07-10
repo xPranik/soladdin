@@ -37,7 +37,7 @@ const Parallax: React.FC<OwnProps> = () => {
       />
       <div
         className={classes.layout_6}
-        style={{ transform: `translateY(${offsetY * 0.8}px)` }}
+        style={{ transform: `translateY(${offsetY * 0.18}px)` }}
       />
       <div
         className={classes.layout_7}

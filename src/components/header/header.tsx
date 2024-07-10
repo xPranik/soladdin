@@ -8,6 +8,7 @@ import { Social } from "./components/social";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const handleScroll = () => {
     console.log("scrolled");
@@ -26,13 +27,31 @@ const Header = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <div
       className={`${classes.wrapper} ${
         isScrolled ? classes["wrapper--scrolled"] : ""
       }`}
     >
-      <div className={classes.container}>
+      <div
+        className={`${classes.menu_burger} ${
+          isOpen ? classes["menu_burger--open"] : ""
+        }`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div
+        className={`${classes.container} ${
+          isOpen ? classes["container--opened"] : ""
+        }`}
+      >
         <div className={classes.content}>
           <div className={classes.logo}>
             <div className={classes.logo__img}>

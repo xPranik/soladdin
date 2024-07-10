@@ -50,6 +50,13 @@
             background-color: rgba(90, 62, 148, 0.5);
         }
     }
+
+    @media (max-width: 1200px) {
+        transform: rotate(-7deg);
+        &--mirrored {
+            transform: rotate(7deg);
+        }
+    }
 }
 
 .text_container {

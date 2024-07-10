@@ -2,6 +2,18 @@
     display: flex;
     align-items: center;
     gap: 35px;
+
+    @media (max-width: 1200px) {
+        gap: 10px;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    
+    @media (max-width: 764px) {
+        flex-direction: column;
+    }
 }
 
 .link {
@@ -10,5 +22,13 @@
 
     &:hover {
         text-decoration: underline;
+    }
+
+    @media (max-width: 1200px) {
+        font-size: 16px;
+    }
+    @media (max-width: 764px) {
+        font-size: 4.5vw;
+        font-weight: 600;
     }
 }

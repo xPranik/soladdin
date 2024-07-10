@@ -9,6 +9,10 @@
     &--second {
         background-image: url('/assets/bg.png');
     }
+
+    @media (max-width: 1200px) {
+        height: 100vw;
+    }
 }
 
 .container {
@@ -24,6 +28,10 @@
     margin: 0 auto;
     padding-top: 185px;
     position: relative;
+    
+    @media (max-width: 1200px) {
+        padding-top: 20vw;
+    }
 }
 
 .strips {
@@ -32,6 +40,11 @@
     height: 84px;
     left: 0;
     z-index: 8;
+
+    
+    @media (max-width: 1200px) {
+        top: 98vw;
+    }
 }
 
 .title {
@@ -40,6 +53,10 @@
     text-align: center;
     font-family: 'KingOfThieves';
     line-height: 1.8;
+
+    @media (max-width: 1200px) {
+        font-size: 18vw;
+    }
 }
 
 .gif {
@@ -50,6 +67,12 @@
     width: 980px;
     height: 560px;
     z-index: 1;
+
+    @media (max-width: 1200px) {
+        width: 130vw;
+        height: 70vw;
+        top: 15vw;
+    }
 }
 
 .actions {
@@ -64,5 +87,9 @@
     & button {
         min-width: 216px;
         width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+        margin-top: 30vw;
     }
 }

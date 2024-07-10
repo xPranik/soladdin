@@ -14,7 +14,6 @@ const Welcome = () => {
         <section className={classes.wrapper}>
           <div className={classes.container}>
             <Parallax />
-
             <div className={classes.content}>
               <h1 className={classes.title}>Soladdin</h1>
               <div className={classes.gif}>
